@@ -1,5 +1,5 @@
 """
-Load required packages
+Import required packages
 """
 #import json
 import os
@@ -12,7 +12,7 @@ load_dotenv()
 apikey = os.environ['apikey']
 url = os.environ['url']
 
-# Prepare the Authenticator
+# Translator Instance and Authenticator
 authenticator = IAMAuthenticator(apikey)
 language_translator = LanguageTranslatorV3(
     version='2018-05-01',
